@@ -3,10 +3,10 @@ let loses = document.querySelector(".loses");
 let wins = document.querySelector(".wins");
 let draws = document.querySelector(".draws");
 let score = {
-  win: 0;
-  lose: 0;
-  draw: 0;
-}
+  win: 0,
+  lose: 0,
+  draw: 0,
+};
 
 function playerMove(move) {
   let computerMove = Math.random();
