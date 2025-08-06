@@ -5,7 +5,7 @@ let draws = document.querySelector(".draws");
 let score = {
   win: 0,
   lose: 0,
-  draw: 0,
+  draw: 0
 };
 
 function playerMove(move) {
