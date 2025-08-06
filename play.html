@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="guess-container">
+        <div>
+          <button
+            class="player-guess-button"
+            onclick="
+            playerMove('rock')"
+          >
+            <img
+              class="player-guess-image"
+              src="images/rock-emoji.png"
+              alt="rock imoji"
+            />
+          </button>
+        </div>
+        <div>
+          <button
+            class="player-guess-button"
+            onclick="
+            playerMove('paper')"
+          >
+            <img
+              class="player-guess-image"
+              src="images/paper-emoji.png"
+              alt="paper imoji"
+            />
+          </button>
+        </div>
+        <div>
+          <button
+            class="player-guess-button"
+            onclick="
+            playerMove('scissors')"
+          >
+            <img class="player-guess-image"" src="images/scissors-emoji.png"
+            alt="scissors imoji">
+          </button>
+        </div>
+      </div>
+      <div class="play-container">
+        <p class="cta-description">Select your move</p>
+        <div class="result-container"></div>
+        <a href="index.html"
+          ><button class="reset-button">reset score</button></a
+        >
+      </div>
+      <div class="score-container">
+        <p class="score-headline">Score</p>
+        <div class="score">
+          <div>
+            <p>Win</p>
+            <p class="wins">0</p>
+          </div>
+          <div>
+            <p>Draw</p>
+            <p class="draws">0</p>
+          </div>
+          <div>
+            <p>Lose</p>
+            <p class="loses">0</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div><p class="rules-headline">Rules</p></div>
+        <div>
+          <ul class="rules-list">
+            <li>Rock crushes scissors</li>
+            <li>scissors cuts paper</li>
+            <li>paper covers rock</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
